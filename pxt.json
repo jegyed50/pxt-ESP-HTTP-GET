@@ -1,5 +1,5 @@
 {
-    "name": "ESP-HTTP-GET",
+    "name": "pxt-ESP-HTTP-GET",
     "version": "0.1.0",
     "description": "Invoke HTTP GET statement with ESP chip for micro:bit, using MICRO:BIT Serial communication",
     "license": "MIT",
