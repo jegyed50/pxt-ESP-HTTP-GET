@@ -9,13 +9,13 @@ namespace ESP-HTTP-GET {
     let last_upload_successful: boolean = false
 
     // write AT command with CR+LF ending
-    function sendAT(command: string, wait: number = 100) {
+    export function sendAT(command: string, wait: number = 100) {
         serial.writeString(command + "\u000D\u000A")
         basic.pause(wait)
     }
 
     // wait for certain response from ESP8266
-    function waitResponse(): boolean {
+    export function waitResponse(): boolean {
         let serial_str: string = ""
         let result: boolean = false
         let time: number = input.runningTime()
